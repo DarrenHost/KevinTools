@@ -2,6 +2,10 @@ namespace KevinTools
 {
     public partial class MainForm : Form
     {
+
+
+        MapForm mapForm = new MapForm();
+        ImageForm imageForm = new ImageForm();
         public MainForm()
         {
             InitializeComponent();
@@ -9,8 +13,8 @@ namespace KevinTools
 
         private void tsmi_image_Click(object sender, EventArgs e)
         {
-            ImageForm imageForm = new ImageForm();
-            imageForm.ShowDialog();
+            imageForm.Show();
+            imageForm.BringToFront();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -25,12 +29,8 @@ namespace KevinTools
 
         private void tsim_map_Click(object sender, EventArgs e)
         {
-            MapForm mapForm = new MapForm();
-            mapForm.ShowDialog();
-
-         
-
-
+             mapForm.Show();
+             mapForm.BringToFront();
         }
     }
 }

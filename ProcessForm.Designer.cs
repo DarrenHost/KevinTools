@@ -86,6 +86,7 @@
             // num_rows
             // 
             num_rows.Location = new Point(118, 132);
+            num_rows.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             num_rows.Name = "num_rows";
             num_rows.Size = new Size(162, 27);
             num_rows.TabIndex = 13;
@@ -129,6 +130,7 @@
             // num_count
             // 
             num_count.Location = new Point(118, 177);
+            num_count.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             num_count.Name = "num_count";
             num_count.Size = new Size(162, 27);
             num_count.TabIndex = 7;
@@ -152,7 +154,7 @@
             // 
             // text_w
             // 
-            text_w.Location = new Point(118, 86);
+            text_w.Location = new Point(118, 89);
             text_w.Name = "text_w";
             text_w.Size = new Size(62, 27);
             text_w.TabIndex = 4;
@@ -160,7 +162,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(19, 89);
+            label2.Location = new Point(19, 92);
             label2.Name = "label2";
             label2.Size = new Size(84, 20);
             label2.TabIndex = 3;
@@ -169,7 +171,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(19, 44);
+            label1.Location = new Point(19, 40);
             label1.Name = "label1";
             label1.Size = new Size(84, 20);
             label1.TabIndex = 2;
@@ -184,7 +186,7 @@
             // 
             // text_x
             // 
-            text_x.Location = new Point(118, 41);
+            text_x.Location = new Point(118, 37);
             text_x.Name = "text_x";
             text_x.Size = new Size(62, 27);
             text_x.TabIndex = 0;

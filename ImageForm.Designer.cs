@@ -32,6 +32,7 @@
             pic_main = new PictureBox();
             statusStrip1 = new StatusStrip();
             tssl_file = new ToolStripStatusLabel();
+            tssl_size = new ToolStripStatusLabel();
             tssl_msg = new ToolStripStatusLabel();
             tssl_info = new ToolStripStatusLabel();
             menuStrip1 = new MenuStrip();
@@ -47,7 +48,6 @@
             toolStrip1 = new ToolStrip();
             tsb_cut = new ToolStripButton();
             folderBrowserDialog1 = new FolderBrowserDialog();
-            tssl_size = new ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)pic_main).BeginInit();
             statusStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -91,6 +91,12 @@
             tssl_file.Size = new Size(69, 20);
             tssl_file.Text = "准备就绪";
             tssl_file.TextChanged += tssl_file_TextChanged;
+            // 
+            // tssl_size
+            // 
+            tssl_size.Name = "tssl_size";
+            tssl_size.Size = new Size(67, 20);
+            tssl_size.Text = "tssl_size";
             // 
             // tssl_msg
             // 
@@ -216,12 +222,6 @@
             tsb_cut.Text = "矩形";
             tsb_cut.Click += tsb_cut_Click;
             // 
-            // tssl_size
-            // 
-            tssl_size.Name = "tssl_size";
-            tssl_size.Size = new Size(67, 20);
-            tssl_size.Text = "tssl_size";
-            // 
             // ImageForm
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
@@ -234,6 +234,7 @@
             MainMenuStrip = menuStrip1;
             Name = "ImageForm";
             Text = " 凯风游戏素材编辑器 by Kevin";
+            FormClosing += ImageForm_FormClosing;
             Load += ImageForm_Load;
             Resize += ImageForm_Resize;
             ((System.ComponentModel.ISupportInitialize)pic_main).EndInit();

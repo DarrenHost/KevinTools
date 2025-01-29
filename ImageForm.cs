@@ -225,7 +225,7 @@ namespace KevinTools
                 return;
             }
 
-            
+
             if (tsb_cut.Tag == null)
             {
 
@@ -305,7 +305,7 @@ namespace KevinTools
 
                 }
             }
-            
+
         }
 
         private void pic_main_MouseUp(object sender, MouseEventArgs e)
@@ -373,10 +373,17 @@ namespace KevinTools
         private void tssl_file_TextChanged(object sender, EventArgs e)
         {
 
-            if (this.pic_main.Image != null) {
+            if (this.pic_main.Image != null)
+            {
                 this.tssl_size.Text = string.Format("{0}x{1}", this.pic_main.Image.Width, this.pic_main.Image.Height);
             }
-           
+
+        }
+
+        private void ImageForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
         }
     }
 }
